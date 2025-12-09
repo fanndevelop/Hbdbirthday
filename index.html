@@ -70,7 +70,10 @@ body{
     cursor:pointer;transition:.4s;position:relative;overflow:hidden;
     display:flex;justify-content:center;align-items:center;font-size:20px;
 }
-.music-card:hover{transform:scale(1.08) rotate(1deg);}
+.music-card:hover{
+    transform:scale(1.08) rotate(1deg);
+    filter:drop-shadow(0 0 10px #AFCBFF);
+}
 
 .red-dark{
     background:linear-gradient(45deg,#330000,#660000,#330000);
@@ -184,9 +187,9 @@ body{
     <h2>Pilih Musik Yg Kamu Suka</h2>
 
     <div class="music-options">
-        <div class="music-card red-dark" onclick="setMusic(1); showToast();"><img src="https://c.termai.cc/i111/Nsz.jpg" class="music-card red-dark">🍁A Thousand Year</div>
-        <div class="music-card blue-elegant" onclick="setMusic(2); showToast();"><img src="https://c.termai.cc/i128/OaQzze.jpg" class="music-card blue-elegant">🌊Mau Di Bawa Kemana</div>
-        <div class="music-card gold-lux" onclick="setMusic(3); showToast();"><img src="https://c.termai.cc/i125/i4v.jpg" class="music-card gold-lux">✨ Wish u were here</div>
+        <div class="music-card red-dark" onclick="setMusic(1); showToast();"><img src="https://c.termai.cc/i177/5QRUDX.jpg" class="music-card red-dark">🍁 About You</div>
+        <div class="music-card blue-elegant" onclick="setMusic(2); showToast();"><img src="https://c.termai.cc/i148/nkz8Q.jpg" class="music-card blue-elegant">🌊 Akhir Tak Bahagia</div>
+        <div class="music-card gold-lux" onclick="setMusic(3); showToast();"><img src="https://c.termai.cc/i123/nk0.jpg" class="music-card gold-lux">✨ Machine Love</div>
     </div>
 
     <audio id="audioPlayer" controls>
@@ -268,13 +271,13 @@ function setMusic(num){
 
     if(num === 1){
         // Direct MP3 file from Vocaroo
-        src.src = "https://media.vocaroo.com/mp3/17N8dZVxASQc";
+        src.src = "https://media.vocaroo.com/mp3/15scoia7sYeZ";
     }
     if(num === 2){
-        src.src = "https://media.vocaroo.com/mp3/1ntIgtowxSPQ"; 
+        src.src = "https://media.vocaroo.com/mp3/1acYZd7t5lfd"; 
     }
     if(num === 3){
-        src.src = "https://media.vocaroo.com/mp3/120nm4uVLWKY";
+        src.src = "https://media.vocaroo.com/mp3/1fJAlkzBYOCI";
     }
 
     audio.load();
